@@ -9,6 +9,13 @@ public class Principal {
 		pa.setN(7);
 		pa.setR(3);
 		System.out.println(pa.resultPA());
+		
+		Distancia dis = new Distancia();
+		dis.setX1(2);
+		dis.setX2(2);
+		dis.setY1(3);
+		dis.setY2(1);
+		System.out.println(dis.getDistacia());
 	}
 
 }

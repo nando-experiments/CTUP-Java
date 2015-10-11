@@ -1,15 +1,16 @@
 package br.com.ctup.dsj;
 
 /**
- * 1.  PA (Progressão Aritmética)
- * A expressão an = a1 + (n – 1) * r é denominada termo geral da PA.
- * Nesta fórmula, temos que an é o termo de ordem n (n-ésimo termo),
- * r é a razão e a1 é o primeiro termo da Progressão Aritmética.
- * Elabore um método que forneça o n-ésimo termo de uma progressão aritmética.
- * Exemplo: a1 = 10, n = 7, r = 3. Resultado: an = 28 
- */
+// 1.  PA (Progressão Aritmética)
+// A expressão an = a1 + (n – 1) * r é denominada termo geral da PA.
+// Nesta fórmula, temos que an é o termo de ordem n (n-ésimo termo),
+// r é a razão e a1 é o primeiro termo da Progressão Aritmética.
+// Elabore um método que forneça o n-ésimo termo de uma progressão aritmética.
+// Exemplo: a1 = 10, n = 7, r = 3. Resultado: an = 28 
+**/
 
-public class Pa {
+public class Pa
+{
 	private Integer an; // termo de ordem
 	private Integer n; // n-ésimo termo
 	private Integer r; // razão
