@@ -8,7 +8,7 @@ public class Helpers
 {
 	private double pi = 3.14;
 	
-	public int aoCubo(int x) {
+	public int aoQuadrado(int x) {
 		return x * x;
 	}
 	
