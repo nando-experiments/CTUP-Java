@@ -1,21 +1,31 @@
 package br.com.ctup.dsj;
 
-public class Principal {
-
+public class Principal
+{
 	public static void main(String[] args) {
-		// a1 = 10, n = 7, r = 3
+		// 1. PA (Progressão Aritmética)
+		// a1 = 10, n = 7, r = 3. Resultado: an = 28
 		Pa pa = new Pa();
 		pa.setA1(10);
 		pa.setN(7);
 		pa.setR(3);
 		System.out.println(pa.resultPA());
 		
+		// 2. Distância
+		// p1(0, 5), p2(10, 20). Resultado: distancia = 10
 		Distancia dis = new Distancia();
-		dis.setX1(2);
-		dis.setX2(2);
-		dis.setY1(3);
-		dis.setY2(1);
+		dis.setX1(5);
+		dis.setX2(0);
+		dis.setY1(20);
+		dis.setY2(10);
 		System.out.println(dis.getDistacia());
+		
+		// 3. Média Aritmética
+		// n1 = 10.0, n2 = 5.5, n3 = 8.0. Resultado: media = 7.83
+		MediaAritmetica media = new MediaAritmetica();
+		media.setN1(10);
+		media.setN2(5.5);
+		media.setN3(8);
+		System.out.println(media.getMedia());
 	}
-
 }
