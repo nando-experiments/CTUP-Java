@@ -8,9 +8,11 @@ public class Helpers
 {
 	private double pi = 3.14;
 	
-	public int aoQuadrado(int x) {
-		return x * x;
+	public double potencia(double x, double y) {
+		return Math.pow(x, y);
 	}
+	
+	
 	
 	public double raiz(double x) {
 		return Math.sqrt(x);

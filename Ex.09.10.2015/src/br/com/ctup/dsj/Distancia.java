@@ -52,7 +52,7 @@ public class Distancia extends Helpers
 	}
 
 	public String getDistacia() {
-		this.dis = this.raiz(this.aoQuadrado(this.x2 - this.x1)) + (this.aoQuadrado(this.y2 - this.y1));
+		this.dis = this.raiz(this.potencia((this.x2 - this.x1), 2)) + (this.potencia((this.y2 - this.y1), 2));
 		return "A distância entre os postos é: " + this.dis;
 	}
 }
