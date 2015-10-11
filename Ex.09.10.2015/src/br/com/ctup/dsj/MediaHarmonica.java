@@ -1,10 +1,10 @@
 package br.com.ctup.dsj;
 
-public class MediaAritmetica
-{
+public class MediaHarmonica {
 	private double n1;
 	private double n2;
 	private double n3;
+	private double media;
 	
 	public double getN1() {
 		return n1;
@@ -29,8 +29,9 @@ public class MediaAritmetica
 	public void setN3(double n3) {
 		this.n3 = n3;
 	}
-	
+
 	public String getMedia() {
-		return "Média Aritmética é = " + (this.n1 + this.n2 + this.n3) / 3;
+		this.media = 3 / ((1 / this.n1) + (1 / this.n2) + (1 / this.n3));
+		return "Média Harmônica é = " + this.media;
 	}
 }

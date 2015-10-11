@@ -27,5 +27,24 @@ public class Principal
 		media.setN2(5.5);
 		media.setN3(8);
 		System.out.println(media.getMedia());
+		
+		// 4. Média Ponderada
+		// n1 = 10.0, n2 = 5.5, n3 = 8.0, p1 = 5, p2 = 3, p3 = 2. Resultado: media = 8.25
+		MediaPonderada mediaP = new MediaPonderada();
+		mediaP.setN1(10);
+		mediaP.setN2(5.5);
+		mediaP.setN3(8);
+		mediaP.setP1(5);
+		mediaP.setP2(3);
+		mediaP.setP3(2);
+		System.out.println(mediaP.getMedia());
+		
+		// 5. Média Harmônica
+		// n1 = 10.0, n2 = 5.5, n3 = 8.0. Resultado: media = 7.37
+		MediaHarmonica mediaA = new MediaHarmonica();
+		mediaA.setN1(10);
+		mediaA.setN2(5.5);
+		mediaA.setN3(8);
+		System.out.println(mediaA.getMedia());
 	}
 }
