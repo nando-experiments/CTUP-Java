@@ -9,4 +9,8 @@ public class Helpers
 	public double raiz(double x) {
 		return Math.sqrt(x);
 	}
+	
+	public int celsiusToFahrenheit(int celsius) {
+		return (9 * celsius + 160) / 5;
+	}
 }

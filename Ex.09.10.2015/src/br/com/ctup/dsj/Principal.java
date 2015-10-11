@@ -46,5 +46,11 @@ public class Principal
 		mediaA.setN2(5.5);
 		mediaA.setN3(8);
 		System.out.println(mediaA.getMedia());
+		
+		// 6. Conversão de temperaturas
+		// c = 30. Resultado: f = 86
+		ConverterTemperatura convTemp = new ConverterTemperatura();
+		convTemp.setCelsius(30);
+		System.out.println(convTemp.getFahrenheit());
 	}
 }
