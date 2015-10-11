@@ -1,5 +1,9 @@
 package br.com.ctup.dsj;
 
+/**
+ * @author nandomoreirame
+ *
+ */
 public class MediaHarmonica {
 	private double n1;
 	private double n2;

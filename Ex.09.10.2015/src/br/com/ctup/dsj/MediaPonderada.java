@@ -1,5 +1,9 @@
 package br.com.ctup.dsj;
 
+/**
+ * @author nandomoreirame
+ *
+ */
 public class MediaPonderada
 {
 	private double n1;

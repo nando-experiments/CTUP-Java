@@ -7,6 +7,10 @@ package br.com.ctup.dsj;
 // A fórmula que efetua tal cálculo é:
 **/
 
+/**
+ * @author nandomoreirame
+ *
+ */
 public class Distancia extends Helpers
 {
 	private Integer x1;

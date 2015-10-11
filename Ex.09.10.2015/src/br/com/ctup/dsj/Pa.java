@@ -9,6 +9,10 @@ package br.com.ctup.dsj;
 // Exemplo: a1 = 10, n = 7, r = 3. Resultado: an = 28 
 **/
 
+/**
+ * @author nandomoreirame
+ *
+ */
 public class Pa
 {
 	private Integer an; // termo de ordem
