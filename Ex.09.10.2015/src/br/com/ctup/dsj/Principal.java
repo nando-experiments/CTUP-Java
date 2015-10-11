@@ -92,5 +92,9 @@ public class Principal
 		// 9. Porcentagem
 		// inicial = 100.00, porcentagem = 15. Resultado: 115.00
 		// ===================================================
+		Porcentagem porc = new Porcentagem();
+		porc.setValorInicial(100);
+		porc.setPorcentagem(15);
+		System.out.println(porc.getTotal());
 	}
 }

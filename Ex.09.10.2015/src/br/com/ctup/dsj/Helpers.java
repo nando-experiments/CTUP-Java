@@ -27,4 +27,8 @@ public class Helpers
 	public double distacia(double tempo, double velocidade) {
 		return tempo * velocidade;
 	}
+	
+	public double percentage(double valor, double percent) {
+		return valor + (valor * percent) / 100;
+	}
 }
