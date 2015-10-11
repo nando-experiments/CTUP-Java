@@ -12,8 +12,6 @@ public class Helpers
 		return Math.pow(x, y);
 	}
 	
-	
-	
 	public double raiz(double x) {
 		return Math.sqrt(x);
 	}
@@ -23,7 +21,7 @@ public class Helpers
 	}
 	
 	public double volume(int raio, int altura) {
-		return this.pi * (raio * raio) * altura;
+		return this.pi * this.potencia(raio, 2) * altura;
 	}
 	
 	public double distacia(double tempo, double velocidade) {
