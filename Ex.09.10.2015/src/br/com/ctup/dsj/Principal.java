@@ -22,10 +22,10 @@ public class Principal
 		// p1(0, 5), p2(10, 20). Resultado: distancia = 10
 		// ===================================================
 		Distancia dis = new Distancia();
-		dis.setX1(5);
-		dis.setX2(0);
-		dis.setY1(20);
-		dis.setY2(10);
+		dis.setX1(0);
+		dis.setX2(10);
+		dis.setY1(5);
+		dis.setY2(20);
 		System.out.println(dis.getDistacia());
 		
 		// ===================================================
