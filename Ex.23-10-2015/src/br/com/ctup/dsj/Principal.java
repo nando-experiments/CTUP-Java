@@ -8,10 +8,10 @@ public class Principal
 		Vetor v1 = new Vetor();
 		Vector<Integer> vet = new Vector<Integer>(2, 3);
 		
-		vet.addElement(1);
 		vet.addElement(23);
 		vet.addElement(5);
 		vet.addElement(4);
+		//vet.addElement(1);
 		vet.addElement(6);
 		vet.addElement(30);
 		vet.addElement(7);
@@ -22,5 +22,9 @@ public class Principal
 		System.out.println("---");
 		
 		v1.MaiorElemento(vet);
+		
+		System.out.println("---");
+		
+		v1.MenorElemento(vet);
 	}
 }
