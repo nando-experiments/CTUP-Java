@@ -1,5 +1,7 @@
 package br.com.ctup.dsj;
 
+import java.util.Collections;
+import java.util.Random;
 import java.util.Vector;
 
 import javax.swing.JOptionPane;
@@ -203,24 +205,21 @@ public class Vetor extends Helpers
 	public String ElementosRepetidos(Vector<Integer> vet)
 	{
 		String message = "";
-		int num, cont = 0;
-		boolean verif = false;
+		int num, cont = 1;
 		
-		for (int i = 0; i < vet.size(); i++) {
+		Collections.sort(vet);
+		
+		for (int i = 0; i < vet.size()-1; i++) {
 			num = vet.get(i);
 			
-			for (int j = 0; j < vet.size(); j++) {
-				if(num == vet.get(j)) {
-					verif = true;
-					cont++;
+			if(num == vet.get(i+1)) {
+				cont++;
+			} else {
+				if(cont > 1) {
+					message += cont + "x o " + num + " \n";
+					cont = 1;
 				}
 			}
-			
-			if(verif && cont > 1) {
-				message += cont + "x o " + num + " \n";
-			}
-			cont = 0;
-			verif = false;
 		}
 		return message;
 	}
@@ -232,15 +231,69 @@ public class Vetor extends Helpers
 	{
 		Vector<Integer> vet = new Vector<Integer>();
 		int n1, n2 = 0;
+		String msg = "";
 		
 		for (int i = 0; i < length; i++) {
 			do {
-				n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero.."));
+				msg = (i == 0) ? "Digite o " + (i+1) + "º numero.." : "Digite um numero maior que o " + i + "º..";
+				n1 = Integer.parseInt(JOptionPane.showInputDialog(msg));
 			} while (n1 <= n2);
 			
 			vet.addElement(n1);
 			n2 = n1;
 		}
 		return vet;
+	}
+
+	/*
+	// Exercício 14.
+	*/
+	public Vector<Integer> ConcatVetores(Vector<Integer> vetA, Vector<Integer> vetB)
+	{
+		Vector<Integer> vetC = new Vector<Integer>();
+		
+		for (int i = 0; i < vetA.size(); i++) {
+			vetC.addElement(vetA.get(i));
+		}
+		for (int i = 0; i < vetB.size(); i++) {
+			vetC.addElement(vetB.get(i));
+		}
+		
+		return vetC;
+	}
+
+	/*
+	// Exercício 15.
+	*/
+	public int[] UnirVetores(int[] vetA, int[] vetB)
+	{
+		//
+		// TODO
+		//
+		return null;
+	}
+
+	/*
+	// Exercício 16.
+	*/
+	public int[] Intersecao(int[] vetA, int[] vetB)
+	{
+		//
+		// TODO
+		//
+		return null;
+	}
+
+	/*
+	// Exercício 17.
+	*/
+	public void ShowMatriz(int[][] matriz)
+	{
+		for(int i = 0 ; i < matriz.length + 1; i++) {
+            for(int j = 0; j < matriz.length + 1; j++) {
+                System.out.printf("\t %d \t", matriz[i][j]);
+            }
+            System.out.println();
+        }
 	}
 }

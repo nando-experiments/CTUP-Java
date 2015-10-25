@@ -182,10 +182,53 @@ public class Principal
 		// Exercício 13.
 		// ------------------------------------------------------
 		System.out.println("\n\n--- Exercício 13 ---");
-		Vector<Integer> e13Vet = vetor.PreencheValor(5);
+		Vector<Integer> e13Vet = vetor.PreencheValor(2);
 		
 		for (int i = 0; i < e13Vet.size(); i++) {
 			System.out.print(e13Vet.get(i) + ", ");
 		}
+
+		// ------------------------------------------------------
+		// Exercício 14.
+		// ------------------------------------------------------
+		System.out.println("\n\n--- Exercício 14 ---");
+		int [] e12elemA = {1, 2, 3, 4};
+		int [] e12elemB = {5, 6, 7, 8, 9, 10};
+		Vector<Integer> e14VetA = new Vector<Integer>();
+		Vector<Integer> e14VetB = new Vector<Integer>();
+		
+		for (int i = 0; i < e12elemA.length; i++) {
+			e14VetA.addElement(e12elemA[i]);
+		}
+		
+		for (int i = 0; i < e12elemB.length; i++) {
+			e14VetB.addElement(e12elemB[i]);
+		}
+		
+		Vector<Integer> e14VetC = vetor.ConcatVetores(e14VetA, e14VetB);
+		for (int i = 0; i < e14VetC.size(); i++) {
+			System.out.print(e14VetC.get(i) + " ");
+		}
+
+		// ------------------------------------------------------
+		// Exercício 15.
+		// ------------------------------------------------------
+		//
+		// TODO
+		//
+
+		// ------------------------------------------------------
+		// Exercício 16.
+		// ------------------------------------------------------
+		//
+		// TODO
+		//
+
+		// ------------------------------------------------------
+		// Exercício 17.
+		// ------------------------------------------------------
+		System.out.println("\n\n--- Exercício 17 ---");
+		int e17Matriz[][] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+		vetor.ShowMatriz(e17Matriz);
 	}
 }
