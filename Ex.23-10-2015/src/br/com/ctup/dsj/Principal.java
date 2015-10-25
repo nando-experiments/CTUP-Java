@@ -101,5 +101,11 @@ public class Principal
 		e7vet.addElement(12);
 		
 		System.out.println(vetor.ProdutorioDeElementos(e7vet));
+
+		// ------------------------------------------------------
+		// Exercício 08.
+		// ------------------------------------------------------
+		double [] e8vet = { 1.2, 9.1, 12.7, 5.0, 7.2, 2.7 };
+		vetor.OrdemaMaior(e8vet);
 	}
 }

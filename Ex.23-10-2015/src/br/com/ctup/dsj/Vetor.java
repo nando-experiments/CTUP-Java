@@ -30,8 +30,7 @@ public class Vetor
 	{
 		System.out.println("--- Exercício 02 ---");
 		
-		int maior = 0;
-		int num = 0;
+		int maior = 0, num = 0;
 		
 		for (int i = 0; i < vet.size(); i++) {
 			num = vet.get(i);
@@ -51,8 +50,7 @@ public class Vetor
 	{
 		System.out.println("\n--- Exercício 03 ---");
 		
-		int menor = vet.get(0);
-		int num   = 0;
+		int menor = vet.get(0), num = 0;
 		
 		for (int i = 0; i < vet.size(); i++) {
 			num = vet.get(i);
@@ -117,8 +115,7 @@ public class Vetor
 	*/
 	public Integer ProdutorioDeElementos(Vector<Integer> vet)
 	{
-		int num = 0;
-		int produtorio = 1;
+		int num = 0, produtorio = 1;
 		
 		for (int i = 0; i < vet.size(); i++) {
 			num = vet.get(i);
@@ -129,6 +126,29 @@ public class Vetor
 		}
 		
 		return produtorio;
+	}
+
+	/*
+	// Exercício 07.
+	*/
+	public void OrdemaMaior(double[] vet)
+	{
+		System.out.println("\n--- Exercício 08 ---");
+		double aux;
+		
+		for (int i = 0; i < vet.length; i++) {
+			for (int j = 0; j < vet.length; j++) {
+				if (vet[i] < vet[j]) {
+					aux = vet[i];
+					vet[i] = vet[j];
+					vet[j] = aux;
+				}
+			}
+		}
+		
+		for (int i = 0; i < vet.length; i++) {
+			System.out.print(vet[i] + " ");
+		}
 	}
 
 }
