@@ -124,20 +124,45 @@ public class Principal
 		// Exercício 10.
 		// ------------------------------------------------------
 		System.out.println("\n\n--- Exercício 10 ---");
-		Vector<Integer> e10AList1 = new Vector<Integer>();
+		Vector<Integer> e10VetA = new Vector<Integer>();
 		
-		e10AList1.addElement(1);
-		e10AList1.addElement(6);
-		e10AList1.addElement(0);
-		e10AList1.addElement(2);
-		e10AList1.addElement(8);
-		e10AList1.addElement(9);
-		e10AList1.addElement(5);
+		e10VetA.addElement(1);
+		e10VetA.addElement(6);
+		e10VetA.addElement(0);
+		e10VetA.addElement(2);
+		e10VetA.addElement(8);
+		e10VetA.addElement(9);
+		e10VetA.addElement(5);
 		
-		Vector<Integer> vetorB = vetor.VetorBdeA(e10AList1);
+		Vector<Integer> e10VetB = vetor.VetorBdeA(e10VetA);
 		
-		for (int i = 0; i < vetorB.size(); i++) {
-			System.out.print(vetorB.get(i) + " ");
+		for (int i = 0; i < e10VetB.size(); i++) {
+			System.out.print(e10VetB.get(i) + " ");
+		}
+
+		// ------------------------------------------------------
+		// Exercício 11.
+		// ------------------------------------------------------
+		System.out.println("\n\n--- Exercício 11 ---");
+		Vector<Integer> e11VetA = new Vector<Integer>();
+		Vector<Integer> e11VetB = new Vector<Integer>();
+		
+		e11VetA.addElement(1);
+		e11VetA.addElement(2);
+		e11VetA.addElement(3);
+		e11VetA.addElement(4);
+		e11VetA.addElement(5);
+
+		e11VetB.addElement(6);
+		e11VetB.addElement(7);
+		e11VetB.addElement(8);
+		e11VetB.addElement(9);
+		e11VetB.addElement(10);
+		
+		Vector<Integer> e10VetC = vetor.MesclaVetores(e11VetA, e11VetB);
+		
+		for (int i = 0; i < e10VetC.size(); i++) {
+			System.out.print(e10VetC.get(i) + " ");
 		}
 	}
 }

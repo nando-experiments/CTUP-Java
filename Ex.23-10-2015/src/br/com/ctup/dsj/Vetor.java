@@ -174,4 +174,23 @@ public class Vetor extends Helpers
 		
 		return vetorB;
 	}
+
+
+	/*
+	// Exercício 11.
+	*/
+	public Vector<Integer> MesclaVetores(Vector<Integer> vetA, Vector<Integer> vetB)
+	{
+		Vector<Integer> vetC = new Vector<Integer>();
+		
+		for (int i = 0; i < vetA.size(); i++) {
+			if(i%2 == 0) {
+				vetC.addElement(vetA.get(i));
+			} else {
+				vetC.addElement(vetB.get(i));
+			}
+		}
+		
+		return vetC;
+	}
 }
