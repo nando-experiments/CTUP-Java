@@ -164,5 +164,18 @@ public class Principal
 		for (int i = 0; i < e10VetC.size(); i++) {
 			System.out.print(e10VetC.get(i) + " ");
 		}
+
+		// ------------------------------------------------------
+		// Exercício 12.
+		// ------------------------------------------------------
+		System.out.println("\n\n--- Exercício 12 ---");
+		Vector<Integer> e12Vet = new Vector<Integer>();
+		int [] e12elements = {0, 8, 5, 4, 7, 0, 6, 3, 4, 0, 7};
+		
+		for (int i = 0; i < e12elements.length; i++) {
+			e12Vet.addElement(e12elements[i]);
+		}
+		
+		System.out.println(vetor.ElementosRepetidos(e12Vet));
 	}
 }

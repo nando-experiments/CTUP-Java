@@ -193,4 +193,33 @@ public class Vetor extends Helpers
 		
 		return vetC;
 	}
+
+
+	/*
+	// Exercício 12.
+	*/
+	public String ElementosRepetidos(Vector<Integer> vet)
+	{
+		String message = "";
+		int num, cont = 0;
+		boolean verif = false;
+		
+		for (int i = 0; i < vet.size(); i++) {
+			num = vet.get(i);
+			
+			for (int j = 0; j < vet.size(); j++) {
+				if(num == vet.get(j)) {
+					verif = true;
+					cont++;
+				}
+			}
+			
+			if(verif && cont > 1) {
+				message += cont + "x o " + num + " \n";
+			}
+			cont = 0;
+			verif = false;
+		}
+		return message;
+	}
 }
