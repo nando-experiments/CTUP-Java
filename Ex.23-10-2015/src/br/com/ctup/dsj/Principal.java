@@ -80,5 +80,26 @@ public class Principal
 		e6v2.addElement(9.0);
 		
 		vetor.ProdutoEscalar(e6v1, e6v2);
+		
+		// ------------------------------------------------------
+		// Exercício 07.
+		// ------------------------------------------------------
+		System.out.println("\n--- Exercício 07 ---");
+		Vector<Integer> e7vet = new Vector<Integer>(12);
+		
+		e7vet.addElement(0);
+		e7vet.addElement(5);
+		e7vet.addElement(8);
+		e7vet.addElement(1);
+		e7vet.addElement(-6);
+		e7vet.addElement(4);
+		e7vet.addElement(-7);
+		e7vet.addElement(9);
+		e7vet.addElement(10);
+		e7vet.addElement(-14);
+		e7vet.addElement(3);
+		e7vet.addElement(12);
+		
+		System.out.println(vetor.ProdutorioDeElementos(e7vet));
 	}
 }

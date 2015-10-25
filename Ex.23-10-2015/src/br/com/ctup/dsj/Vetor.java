@@ -112,4 +112,23 @@ public class Vetor
 		System.out.println("Produto escalar de v1 e v2 é: " + produtoEscalar);
 	}
 
+	/*
+	// Exercício 07.
+	*/
+	public Integer ProdutorioDeElementos(Vector<Integer> vet)
+	{
+		int num = 0;
+		int produtorio = 1;
+		
+		for (int i = 0; i < vet.size(); i++) {
+			num = vet.get(i);
+			
+			if (num > 0 && num%2 == 0) {
+				produtorio *= num;
+			}
+		}
+		
+		return produtorio;
+	}
+
 }
