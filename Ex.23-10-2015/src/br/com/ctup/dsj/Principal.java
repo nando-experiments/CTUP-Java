@@ -53,7 +53,7 @@ public class Principal
 		e5v2.addElement(9.5);
 		e5v2.addElement(3.5);
 		
-        Vector<Double> e5VetMultp = vetor.MultiplicaVetores(e5v1, e5v2);
+		Vector<Double> e5VetMultp = vetor.MultiplicaVetores(e5v1, e5v2);
         
 		for (int i = 0; i < e5VetMultp.size(); i++) {
 			System.out.printf("%.2f", e5VetMultp.get(i));
@@ -107,5 +107,10 @@ public class Principal
 		// ------------------------------------------------------
 		double [] e8vet = { 1.2, 9.1, 12.7, 5.0, 7.2, 2.7 };
 		vetor.OrdemaMaior(e8vet);
+
+		// ------------------------------------------------------
+		// Exercício 09.
+		// ------------------------------------------------------
+		vetor.VetorDeFibonacci(8);
 	}
 }

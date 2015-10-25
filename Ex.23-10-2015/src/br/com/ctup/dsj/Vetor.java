@@ -50,7 +50,8 @@ public class Vetor
 	{
 		System.out.println("\n--- Exercício 03 ---");
 		
-		int menor = vet.get(0), num = 0;
+		int menor = vet.get(0),
+			num = 0;
 		
 		for (int i = 0; i < vet.size(); i++) {
 			num = vet.get(i);
@@ -101,7 +102,7 @@ public class Vetor
 		System.out.println("\n\n--- Exercício 06 ---");
 		
 		Double produtoEscalar = 0.0;
-        Vector<Double> vetMultiplicado = this.MultiplicaVetores(v1, v2);
+		Vector<Double> vetMultiplicado = this.MultiplicaVetores(v1, v2);
         
 		for (int i = 0; i < vetMultiplicado.size(); i++) {
 			produtoEscalar += vetMultiplicado.get(i);
@@ -129,7 +130,7 @@ public class Vetor
 	}
 
 	/*
-	// Exercício 07.
+	// Exercício 08.
 	*/
 	public void OrdemaMaior(double[] vet)
 	{
@@ -148,6 +149,27 @@ public class Vetor
 		
 		for (int i = 0; i < vet.length; i++) {
 			System.out.print(vet[i] + " ");
+		}
+	}
+
+	/*
+	// Exercício 09.
+	*/
+	static long fibo(int n)
+	{
+		if (n < 2) {
+			return n;
+		} else {
+			return fibo(n - 1) + fibo(n - 2);
+		}
+	}
+	public void VetorDeFibonacci(int limit)
+	{
+		System.out.println("\n\n--- Exercício 09 ---");
+		if(limit > 0) {
+			for (int i = 0; i < limit; i++) {
+				System.out.print(fibo(i) + " ");
+			}
 		}
 	}
 
