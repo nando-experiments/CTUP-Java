@@ -177,5 +177,15 @@ public class Principal
 		}
 		
 		System.out.println(vetor.ElementosRepetidos(e12Vet));
+
+		// ------------------------------------------------------
+		// Exercício 13.
+		// ------------------------------------------------------
+		System.out.println("\n\n--- Exercício 13 ---");
+		Vector<Integer> e13Vet = vetor.PreencheValor(5);
+		
+		for (int i = 0; i < e13Vet.size(); i++) {
+			System.out.print(e13Vet.get(i) + ", ");
+		}
 	}
 }

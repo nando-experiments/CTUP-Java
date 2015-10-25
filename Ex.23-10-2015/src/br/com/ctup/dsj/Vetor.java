@@ -2,6 +2,8 @@ package br.com.ctup.dsj;
 
 import java.util.Vector;
 
+import javax.swing.JOptionPane;
+
 public class Vetor extends Helpers
 {
 	/*
@@ -221,5 +223,24 @@ public class Vetor extends Helpers
 			verif = false;
 		}
 		return message;
+	}
+
+	/*
+	// Exercício 13.
+	*/
+	public Vector<Integer> PreencheValor(Integer length)
+	{
+		Vector<Integer> vet = new Vector<Integer>();
+		int n1, n2 = 0;
+		
+		for (int i = 0; i < length; i++) {
+			do {
+				n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero.."));
+			} while (n1 <= n2);
+			
+			vet.addElement(n1);
+			n2 = n1;
+		}
+		return vet;
 	}
 }
