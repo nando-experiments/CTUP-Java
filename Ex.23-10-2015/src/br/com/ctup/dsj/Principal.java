@@ -5,7 +5,7 @@ import java.util.Vector;
 public class Principal
 {
 	public static void main(String[] args) {
-		Vetor v1 = new Vetor();
+		Vetor vetor = new Vetor();
 		Vector<Integer> vet = new Vector<Integer>(2, 3);
 		
 		vet.addElement(23);
@@ -15,19 +15,40 @@ public class Principal
 		vet.addElement(30);
 		vet.addElement(7);
 		vet.addElement(10);
-		v1.MostraVetor(vet);
+		
+		// Exercício 01.
+		vetor.MostraVetor(vet);
+		
+		// Exercício 02.
+		vetor.MaiorElemento(vet);
+		
+		// Exercício 03.
+		vetor.MenorElemento(vet);
+		
+		// Exercício 04.	
+		vetor.VetorInverso(vet);
 
-		System.out.println("");
-		System.out.println("---");
+		// Exercício 05.
+		System.out.println("\n\n--- Exercício 05 ---");
 		
-		v1.MaiorElemento(vet);
+		Vector<Double> v1 = new Vector<Double>(5);
+		Vector<Double> v2 = new Vector<Double>(5);
+
+		v1.addElement(3.1);
+		v1.addElement(2.2);
+		v1.addElement(4.3);
+		v1.addElement(6.4);
 		
-		System.out.println("---");
+		v2.addElement(1.2);
+		v2.addElement(7.2);
+		v2.addElement(4.3);
+		v2.addElement(2.7);
 		
-		v1.MenorElemento(vet);
-		
-		System.out.println("---");
-		
-		v1.VetorInverso(vet);
+        Vector<Double> vetMultiplicado = vetor.MultiplicaVetores(v1, v2);
+        
+		for (int i = 0; i < vetMultiplicado.size(); i++) {
+			System.out.printf("%.2f", vetMultiplicado.get(i));
+			System.out.print(" - ");
+		}
 	}
 }
