@@ -11,7 +11,6 @@ public class Principal
 		vet.addElement(23);
 		vet.addElement(5);
 		vet.addElement(4);
-		//vet.addElement(1);
 		vet.addElement(6);
 		vet.addElement(30);
 		vet.addElement(7);
@@ -26,5 +25,9 @@ public class Principal
 		System.out.println("---");
 		
 		v1.MenorElemento(vet);
+		
+		System.out.println("---");
+		
+		v1.VetorInverso(vet);
 	}
 }

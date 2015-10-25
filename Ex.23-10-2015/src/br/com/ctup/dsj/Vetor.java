@@ -14,7 +14,6 @@ public class Vetor
 		    if(count < vet.size()) {
 		    	System.out.print(", ");
 		    }
-		    //System.out.println(count);
 		}
 	}
 	
@@ -47,4 +46,15 @@ public class Vetor
 		
 		System.out.println("O menor número do vetor é: " + menor);
 	}
+	
+	public void VetorInverso(Vector<Integer> vet) {
+		for (int i = (vet.size()-1); i >= 0; i--) {
+			System.out.print(vet.get(i));
+		    
+		    if(i != 0) {
+		    	System.out.print(", ");
+		    }
+		}
+	}
+
 }
