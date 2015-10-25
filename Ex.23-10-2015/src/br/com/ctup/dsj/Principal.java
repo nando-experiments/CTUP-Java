@@ -1,5 +1,6 @@
 package br.com.ctup.dsj;
 
+//import java.util.ArrayList;
 import java.util.Vector;
 
 public class Principal
@@ -20,17 +21,23 @@ public class Principal
 		// ------------------------------------------------------
 		// Exercício 01.
 		// ------------------------------------------------------
+		System.out.println("--- Exercício 01 ---");
 		vetor.MostraVetor(vet);
+		System.out.println("\n");
 		
 		// ------------------------------------------------------
 		// Exercício 02.
 		// ------------------------------------------------------
-		vetor.MaiorElemento(vet);
+		System.out.println("--- Exercício 02 ---");
+		int maior = vetor.MaiorElemento(vet);
+		System.out.println("O maior número do vetor é: " + maior);
 		
 		// ------------------------------------------------------
 		// Exercício 03.
 		// ------------------------------------------------------
-		vetor.MenorElemento(vet);
+		System.out.println("\n--- Exercício 03 ---");
+		int menor = vetor.MenorElemento(vet);
+		System.out.println("O menor número do vetor é: " + menor);
 		
 		// ------------------------------------------------------
 		// Exercício 04.
@@ -112,5 +119,25 @@ public class Principal
 		// Exercício 09.
 		// ------------------------------------------------------
 		vetor.VetorDeFibonacci(8);
+
+		// ------------------------------------------------------
+		// Exercício 10.
+		// ------------------------------------------------------
+		System.out.println("\n\n--- Exercício 10 ---");
+		Vector<Integer> e10AList1 = new Vector<Integer>();
+		
+		e10AList1.addElement(1);
+		e10AList1.addElement(6);
+		e10AList1.addElement(0);
+		e10AList1.addElement(2);
+		e10AList1.addElement(8);
+		e10AList1.addElement(9);
+		e10AList1.addElement(5);
+		
+		Vector<Integer> vetorB = vetor.VetorBdeA(e10AList1);
+		
+		for (int i = 0; i < vetorB.size(); i++) {
+			System.out.print(vetorB.get(i) + " ");
+		}
 	}
 }

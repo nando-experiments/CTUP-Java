@@ -2,7 +2,7 @@ package br.com.ctup.dsj;
 
 import java.util.Vector;
 
-public class Vetor
+public class Vetor extends Helpers
 {
 	/*
 	// Exercício 01.
@@ -10,7 +10,6 @@ public class Vetor
 	public void MostraVetor(Vector<Integer> vet)
 	{
 		int count = 0;
-		System.out.println("--- Exercício 01 ---");
 		
 		for (int i = 0; i < vet.size(); i++) {
 		    System.out.print(vet.get(i));
@@ -20,16 +19,13 @@ public class Vetor
 		    	System.out.print(", ");
 		    }
 		}
-		System.out.println("\n");
 	}
 
 	/*
 	// Exercício 02.
 	*/
-	public void MaiorElemento(Vector<Integer> vet)
+	public int MaiorElemento(Vector<Integer> vet)
 	{
-		System.out.println("--- Exercício 02 ---");
-		
 		int maior = 0, num = 0;
 		
 		for (int i = 0; i < vet.size(); i++) {
@@ -40,16 +36,14 @@ public class Vetor
 			}
 		}
 		
-		System.out.println("O maior número do vetor é: " + maior);
+		return maior;
 	}
 
 	/*
 	// Exercício 03.
 	*/
-	public void MenorElemento(Vector<Integer> vet)
+	public int MenorElemento(Vector<Integer> vet)
 	{
-		System.out.println("\n--- Exercício 03 ---");
-		
 		int menor = vet.get(0),
 			num = 0;
 		
@@ -61,7 +55,7 @@ public class Vetor
 			}
 		}
 		
-		System.out.println("O menor número do vetor é: " + menor);
+		return menor;
 	}
 
 	/*
@@ -155,14 +149,6 @@ public class Vetor
 	/*
 	// Exercício 09.
 	*/
-	static long fibo(int n)
-	{
-		if (n < 2) {
-			return n;
-		} else {
-			return fibo(n - 1) + fibo(n - 2);
-		}
-	}
 	public void VetorDeFibonacci(int limit)
 	{
 		System.out.println("\n\n--- Exercício 09 ---");
@@ -173,4 +159,19 @@ public class Vetor
 		}
 	}
 
+
+	/*
+	// Exercício 10.
+	*/
+	public Vector<Integer> VetorBdeA(Vector<Integer> vetorA)
+	{
+		Vector<Integer> vetorB = new Vector<Integer>();
+		
+		vetorB.addElement(this.MaiorElemento(vetorA));
+		vetorB.addElement(this.MenorElemento(vetorA));
+		vetorB.addElement(this.SomaValoresVetor(vetorA));
+		vetorB.addElement(this.MediaValoresVetor(vetorA));
+		
+		return vetorB;
+	}
 }
